@@ -1,0 +1,39 @@
+.info-button-container {
+    margin-left: .5vw;
+    position: relative;
+}
+
+  .info-button {
+    background-color: #b7b8be;
+    color: white;
+    border: none;
+    width : 1.5vw;
+    height : 1.5vw;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+  }
+  
+  .info-tooltip {
+    visibility: visible;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    padding: 1vh 1vw;
+    border-radius: 6%;
+    position: absolute;
+    z-index: 1;
+    margin-left: -2vw;
+    width: 10vw;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .info-button:hover + .info-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  

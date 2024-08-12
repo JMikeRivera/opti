@@ -1,0 +1,69 @@
+.polResultados{
+    width: 73vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding-right: 2vw;
+    padding-bottom: 1.5vh;
+    overflow: auto;
+}
+
+.titulo {
+    margin-top: 4vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.ParamsDiv {
+    display: flex;
+    height: 13vh;
+    margin-top: 6vh;
+}
+
+.radio {
+    margin-top: 1.5vh;
+    margin-right: 5vw;
+}
+
+.Form {
+    vertical-align: middle;
+    padding-right: 50vw;
+    flex: 1;
+}
+
+.tableContainer {
+    max-height: 55vh;
+    overflow-y: auto;
+    margin-top: 3vh;
+}
+
+table {
+    min-width: 50vw;
+}
+
+.tableContainer .MuiTableHead-root .MuiTableCell-root {
+    font-weight: bold;
+    background-color: #001630;
+    color: white;
+    z-index: 1050; /* Ensure it's above most other content */
+}
+
+/* Make the header row sticky */
+.tableContainer .MuiTableHead-root .MuiTableRow-head {
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* Same or higher than individual cells to ensure it stays on top */
+}.tableContainer .MuiTableHead-root .MuiTableCell-root {
+    font-weight: bold;
+    background-color: #001630;
+    color: white;
+    /* Using a high z-index value to ensure the header stays above other content */
+    z-index: 1100; 
+}
+
+/* Make the header row sticky */
+.tableContainer .MuiTableHead-root .MuiTableRow-head {
+    position: sticky;
+    top: 0;
+    /* Higher z-index to keep the header above all the other rows and elements */
+    z-index: 1100; 
+}

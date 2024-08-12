@@ -1,0 +1,94 @@
+.polParametros{
+    width: 73vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding-right: 2vw;
+    overflow: auto;
+}
+
+.titulo {
+    margin-top: 4vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.sub-titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: large;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.historicalHorizonInput, .endOfHorizonInput, .calendarSelect {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .historicalHorizonInput label, .endOfHorizonInput label, .calendarSelect label {
+    margin-right: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .historicalHorizonInput input, .endOfHorizonInput input, .calendarSelect select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+  }
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+  
+.sub-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+
+
+.service-level {
+    display: flex;
+    justify-content: space-around;
+    margin-top: .5vh;
+    margin-bottom: 3vh;
+}
+
+.service-level-item {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.service-level-item label {
+    margin-right: 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.75rem;
+}
+
+.service-level-item input {
+    width: 5vw;
+    padding: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 0.25rem;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+}
+
+.service-level-item span {
+    font-weight: bold;
+}

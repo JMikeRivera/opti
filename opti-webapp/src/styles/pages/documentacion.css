@@ -1,0 +1,91 @@
+.Documentacion{
+    width: 75vw;
+    margin: 0 auto;
+}  
+
+.text1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    padding-left: 1vw;
+}
+
+.Documentacion {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .panel {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: #e9ecef;
+    cursor: pointer;
+  }
+  
+  .panel-heading h2 {
+    margin: 0;
+  }
+  
+  .panel-content {
+    padding: 10px 15px;
+    border-top: none;
+  }
+  
+  .panel-content p {
+    margin: 0;
+  }
+  .sub-panel {
+    margin-left: 20px;
+    background-color: #fff;
+    border-left: 3px solid #007bff;
+  }
+  
+  .sub-panel-heading {
+    padding: 8px 15px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+  }
+  
+  .sub-panel-heading h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #007bff;
+  }
+  
+  .sub-panel-content {
+    padding: 8px 15px;
+  }
+  .sub-sub-panel {
+    margin-left: 40px; /* More indentation for deeper nesting */
+  }
+  
+  .sub-sub-panel-heading {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .sub-sub-panel-heading h4 {
+    margin: 0;
+    font-size: 14px; /* Smaller font for deeper sections */
+    color: #333;
+  }
+  
+  .sub-sub-panel-content {
+    padding: 5px 10px;
+  }
+ 
+.scrollable-page {
+  height: 100vh; /* Altura completa de la ventana */
+  overflow-y: auto; /* Barra de desplazamiento vertical */
+  padding-right: 10px; /* Espacio para la barra de desplazamiento */
+}
+

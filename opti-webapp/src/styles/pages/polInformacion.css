@@ -1,0 +1,75 @@
+.polInformacion {
+    display: flex;
+    flex-direction: column;
+    width: 73vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding-right: 2vw;
+    overflow: auto;
+}
+
+.titulo {
+    margin-top: 4vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite la envoltura de elementos si no caben en una sola fila */
+    gap: 20px;
+}
+
+.upload-section, .results-section {
+    flex: 1; /* Se asigna la propiedad flex para que ambos tomen el mismo espacio */
+    min-width: 700px; /* Se define un mínimo de ancho mayor */
+    background: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    padding: 20px;
+    width: 100%; /* Se ajusta para que el cuadro tome todo el ancho disponible */
+}
+
+.radio-buttons {
+    margin-bottom: 20px;
+}
+
+.radio-buttons label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+.informacion-buttons {
+    display: block;
+    background-color: #007BFF; /* Color azul */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 100%; /* Se ajusta para que el botón se expanda al ancho del contenedor */
+}
+
+.informacion-buttons:disabled {
+    background-color: #CCC;
+}
+
+.informacion-buttons:hover:not(:disabled) {
+    background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+}
+
+.results-section {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    flex: 1; /* Hace que el textarea crezca para llenar el espacio disponible */
+    min-height: 150px; /* Se cambia a min-height para permitir que crezca */
+    margin-bottom: 20px;
+}

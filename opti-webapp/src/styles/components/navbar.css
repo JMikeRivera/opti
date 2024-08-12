@@ -1,0 +1,170 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    height: 101vh;
+    background-color: #FFFFFF;
+    color: black; 
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 2vw;
+
+    box-shadow: 0 0 10px #727272;
+  }
+  
+  .navbar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+    margin: 0;
+    padding: 0;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+    background-color: #012652;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .headerLogo {
+    max-height: 100%;
+    width: auto;
+    padding: 0;
+  }
+  
+  .navbar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+
+    /* add a very minimum space between the items */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar-item {
+    position: relative;
+    padding: 20px 20px;
+    cursor: pointer;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Add space between icon and text */
+
+    font-weight: 550;
+    font-size: 1.2rem;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+  }
+  
+  .navbar-item:hover {
+    background-color: #e1e1e1;
+  }
+
+  .arrow-icon {
+    margin-left: .5rem; /* Space the arrow from the text */
+    transition: transform 0.3s ease; /* Animation for the arrow rotation */
+  }
+
+  .arrow-icon.open {
+    transform: rotate(-180deg); /* Rotate arrow when the dropdown is open */
+  }
+
+  .navbar-dropdown {
+    list-style-type: none;
+    padding-left: 20px; /* or your desired indent */
+  }
+  
+  .dropdown-item {
+    padding: 15px 20px;
+    background-color: #fdfdfd;
+  }
+
+  .dropdown-item:hover {
+    background-color: #dcdcdc;
+    cursor: pointer;
+  }
+  
+  .navbar-footer {
+    margin-top: auto;
+    padding: 1rem;
+    font-weight: 550;
+    font-size: 1.1rem;
+
+    background-color: #FFFFFF;
+    /*box-shadow: 0px -4px 6px -2px #e3e3e3;*/
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .navbar-documentacion, .navbar-perfil {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+    gap: 10px; /* Add space between icon and text */
+  }
+
+  .navbar-documentacion:hover, .navbar-perfil:hover{
+    /*underline the text on hover with a transform effect*/
+    text-decoration: underline;
+    /*font-size: 1.5rem;*/
+    transform: scale(1.02);
+  }
+  
+  .navbar-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+
+  .navbar-item.active, .dropdown-item.active, .active {
+    position: relative; /* This is necessary for the absolute positioning of the :after pseudo-element */
+  }
+  
+  .navbar-item.active:after, .dropdown-item.active:after, .active:after {
+    content: '';
+    position: absolute;
+    right: -2.6vw; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 1.3vw; /* Adjust size of the triangle */
+    border-style: solid;
+    border-color: transparent transparent transparent #012652;
+    /* This creates a triangle with the hypotenuse on the left side and the right color */
+  }
+
+
+  /* dropdown de perfil */
+  .profile-dropdown {
+    position: absolute;
+    left: 24vw;
+    bottom: 2vh;
+    background-color: #012652;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .profile-dropdown .profile-dropdown-item, .profile-dropdown .profile-dropdown-user {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-dropdown .profile-dropdown-item {
+    cursor: pointer;
+  }
+  
+  .profile-dropdown .profile-dropdown-item svg, .profile-dropdown .profile-dropdown-user svg {
+    margin-right: 10px;
+  }
+  
+  .profile-dropdown .profile-dropdown-item:hover {
+    background-color: #033169;
+    border-radius: 8px;
+  }
+  

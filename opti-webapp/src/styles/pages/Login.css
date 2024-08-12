@@ -1,0 +1,172 @@
+/* Estilos del contenedor principal */
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  height: 100vh;
+  position: relative;
+  background-color: #f5f3f0;
+  background-color: #DFDFDF;
+}
+
+/* Estilos del fondo azul en el lado derecho */
+.login-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 45%; 
+  background: url('/images/LogIn.jpg') no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+}
+
+/* Estilos para el formulario de inicio de sesión */
+.login-form {
+  position: absolute;
+  left: 6vw; 
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.98); 
+  border-radius: 30px; 
+  padding: 1vh 2vw 4vh; 
+  width: 50vw; 
+  height: auto; 
+  min-height: 500px; 
+  max-width: 600px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; 
+}
+
+.titulo {
+  font-family: 'Manrope';
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 3vh;
+}
+
+.inputs {
+  width: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+/* Estilos para los campos de entrada, botones, etc */
+.input-field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 5.5vw; 
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  z-index: 3;
+}
+
+.input-field input {
+  width: 80%;
+  padding: 20px 20px 20px 50px; 
+  border-radius: 30px; 
+  border: 1.5px solid #0E64D2;
+  font-size: 1rem;
+  box-sizing: border-box;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+  background-color: white;
+  color: black;
+
+}
+
+.input-field input:focus {
+  background-color: white; /* Ensure background remains white on focus */
+}
+
+.input-field input:-webkit-autofill, .input-field input:-webkit-autofill:hover, .input-field input:-webkit-autofill:focus, .input-field input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, .5), 0 0 0 30px white inset !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .5), 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: black !important;
+}
+
+.recover {
+  position: relative;
+  margin-top: -1vh;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: 10%;
+}
+
+.recover {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.recover:active {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.recover:hover {
+  text-decoration: underline;
+}
+
+
+/* Estilos para el botón de inicio de sesión */
+.login-button {
+  width: 30vw;
+  padding: 2vh 2vw 2vh 2vw;
+  border: none;
+  border-radius: 30px;
+  background-color: #0E64D2;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; 
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el checkbox de recordar usuario */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+
+  position: relative;
+  margin-top: 9.5vh;
+  margin-left: 13vw;
+
+  width: 100%; 
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: .75vw; 
+}
+
+.login-button {
+  margin-top: 2vh;
+  margin-bottom: 2.5vh;
+}
+
+
+.logo-btc {
+  width: 40vw; 
+  position: absolute;
+  top: 27vh; 
+  right: 3vw; 
+  z-index: 3; 
+}
